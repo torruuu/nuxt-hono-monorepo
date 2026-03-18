@@ -1,5 +1,4 @@
-import { authClient } from '@/lib/auth/auth-client'
-import { useQueryClient } from '@tanstack/vue-query'
+import { querySession } from '@/lib/auth/query-session'
 
 export default defineNuxtRouteMiddleware(async (to, _from) => {
   const nuxtApp = useNuxtApp()
@@ -9,13 +8,9 @@ export default defineNuxtRouteMiddleware(async (to, _from) => {
   // causing a flash of the wrong page and hydration mismatches.
   if (import.meta.client && nuxtApp.isHydrating) return
 
-  const queryClient = useQueryClient()
-  const { data } = await queryClient.ensureQueryData({
-    queryKey: ['auth-session'],
-    queryFn: async () => await authClient.useSession(useFetch),
-  })
+  const session = await querySession()
 
-  if (!data?.value) {
+  if (!session) {
     if (to.path !== '/login') return navigateTo('/login')
     return
   }

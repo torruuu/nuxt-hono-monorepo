@@ -8,9 +8,10 @@ import {
   CardTitle,
 } from '@/components/ui/card'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { querySession } from '@/lib/auth/query-session'
 
-const { session } = useSession()
-if (session.value) navigateTo('/')
+const session = await querySession()
+if (session) navigateTo('/')
 </script>
 
 <template>

@@ -5,7 +5,7 @@ export function useSession() {
   const query = useQuery({
     queryKey: ['auth-session'],
     queryFn: async () => await authClient.getSession(),
-    staleTime: 1000 * 30,
+    staleTime: 1000 * 30, // 30 seconds
   })
 
   watch([query.error, query.data], ([error, data]) => {
