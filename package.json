@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
     "prepare": "husky || true"
   },
   "keywords": [],
@@ -16,6 +19,7 @@
     "@commitlint/config-conventional": "^20.5.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
+    "turbo": "^2.8.18",
     "typescript": "^5.9.3"
   }
 }
