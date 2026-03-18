@@ -4,7 +4,7 @@ import { authClient } from '@/lib/auth/auth-client'
 import { LogOutIcon } from 'lucide-vue-next'
 
 const { session } = useSession()
-if (!session) navigateTo('/login')
+if (!session.value) navigateTo('/login')
 
 const handleSignOut = async () => {
   await authClient.signOut({

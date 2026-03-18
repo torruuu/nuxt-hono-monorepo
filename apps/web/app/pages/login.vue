@@ -10,7 +10,7 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 
 const { session } = useSession()
-if (session) navigateTo('/')
+if (session.value) navigateTo('/')
 </script>
 
 <template>
