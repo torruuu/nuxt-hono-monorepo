@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Button } from '@/components/ui/button'
-import { cn } from '@/lib/shadcn/utils'
+import { Button } from '@web/components/ui/button'
+import { cn } from '@web/lib/shadcn/utils'
 import { DialogClose } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'
 

@@ -1,4 +1,4 @@
-import { httpError } from '@/core/errors/http-error-handler.js'
+import { httpError } from '@api/core/errors/http-error-handler.js'
 import type { Hook } from '@hono/zod-openapi'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

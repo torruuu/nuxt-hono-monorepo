@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { cn } from '@/lib/shadcn/utils'
 import { reactiveOmit } from '@vueuse/core'
+import { cn } from '@web/lib/shadcn/utils'
 import { ChevronRight } from 'lucide-vue-next'
 import type { DropdownMenuSubTriggerProps } from 'reka-ui'
 import { DropdownMenuSubTrigger, useForwardProps } from 'reka-ui'

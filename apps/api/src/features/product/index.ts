@@ -1,6 +1,6 @@
-import { createRouter } from '@/core/factories/create-app.js'
-import * as controllers from '@/features/product/product.controller.js'
-import * as routes from '@/features/product/product.routes.js'
+import { createRouter } from '@api/core/factories/create-app.js'
+import * as controllers from '@api/features/product/product.controller.js'
+import * as routes from '@api/features/product/product.routes.js'
 
 const router = createRouter()
   .openapi(routes.getAllProductsRoute, controllers.getAllProducts)

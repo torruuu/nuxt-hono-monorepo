@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { cn } from '@/lib/shadcn/utils'
 import { reactiveOmit } from '@vueuse/core'
+import { cn } from '@web/lib/shadcn/utils'
 import type { DialogDescriptionProps } from 'reka-ui'
 import { DialogDescription, useForwardProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

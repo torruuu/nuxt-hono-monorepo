@@ -1,6 +1,6 @@
-import { createApp } from '@/core/factories/create-app.js'
-import defineOpenAPI from '@/core/openapi/config.js'
-import productRouter from '@/features/product/index.js'
+import { createApp } from '@api/core/factories/create-app.js'
+import defineOpenAPI from '@api/core/openapi/config.js'
+import productRouter from '@api/features/product/index.js'
 
 const app = createApp()
 

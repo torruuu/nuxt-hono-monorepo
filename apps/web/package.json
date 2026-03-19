@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "@starter-app/web",
   "private": true,
   "type": "module",
   "scripts": {
@@ -38,6 +38,7 @@
     "serialize-javascript": "^7.0.3"
   },
   "devDependencies": {
+    "@starter-app/api": "workspace:*",
     "@eslint/js": "^9.39.3",
     "@hey-api/openapi-ts": "^0.93.1",
     "@nuxt/eslint": "^1.15.2",

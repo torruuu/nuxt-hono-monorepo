@@ -1,5 +1,5 @@
-import * as Status from '@/constants/http-status-codes.js'
-import * as Phrase from '@/constants/http-status-phrases.js'
+import * as Status from '@api/constants/http-status-codes.js'
+import * as Phrase from '@api/constants/http-status-phrases.js'
 
 export const APP_ERRORS = {
   internal_server_error: {

@@ -1,5 +1,5 @@
-import type { CreateProduct, Product } from '@/features/product/product.types.js'
-import { prisma } from '@/integrations/database/config.js'
+import type { CreateProduct, Product } from '@api/features/product/product.types.js'
+import { prisma } from '@api/integrations/database/config.js'
 
 export function getAllProducts(): Promise<Product[]> {
   return prisma.product.findMany()

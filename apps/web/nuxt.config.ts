@@ -1,6 +1,11 @@
 import tailwindcss from '@tailwindcss/vite'
+import { fileURLToPath } from 'node:url'
 
 export default defineNuxtConfig({
+  alias: {
+    '@api': fileURLToPath(new URL('../api/src', import.meta.url)),
+    '@web': fileURLToPath(new URL('./app', import.meta.url)),
+  },
   modules: [
     '@nuxt/eslint',
     'shadcn-nuxt',
@@ -24,6 +29,7 @@ export default defineNuxtConfig({
         'vee-validate',
         'zod',
         'class-variance-authority',
+        'better-auth/client/plugins',
       ],
     },
   },

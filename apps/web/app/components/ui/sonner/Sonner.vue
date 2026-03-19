@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { cn } from '@/lib/shadcn/utils'
+import { cn } from '@web/lib/shadcn/utils'
 import {
   CircleCheckIcon,
   InfoIcon,

@@ -1,5 +1,5 @@
-import { APP_ERRORS, type AppErrorCode } from '@/core/errors/app-errors.js'
-import zodIssuesFormatter from '@/core/errors/zod-issues-formatter.js'
+import { APP_ERRORS, type AppErrorCode } from '@api/core/errors/app-errors.js'
+import zodIssuesFormatter from '@api/core/errors/zod-issues-formatter.js'
 import type { Context } from 'hono'
 import type { z } from 'zod'
 

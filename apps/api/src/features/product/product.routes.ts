@@ -1,12 +1,12 @@
-import * as HttpStatusCodes from '@/constants/http-status-codes.js'
-import jsonContent from '@/core/openapi/helpers/json-content.js'
-import { openApiErrorResponse } from '@/core/openapi/schemas/error-response.js'
+import * as HttpStatusCodes from '@api/constants/http-status-codes.js'
+import jsonContent from '@api/core/openapi/helpers/json-content.js'
+import { openApiErrorResponse } from '@api/core/openapi/schemas/error-response.js'
 import {
   CreateProductSchema,
   ProductIdParamSchema,
   ProductListSchema,
   ProductSchema,
-} from '@/features/product/product.schema.js'
+} from '@api/features/product/product.schema.js'
 import { createRoute } from '@hono/zod-openapi'
 
 const tags = ['Products']

@@ -1,4 +1,4 @@
-import env from '@/env.js'
+import env from '@api/env.js'
 import type { MiddlewareHandler } from 'hono'
 import { pinoHttp, type HttpLogger } from 'pino-http'
 import pretty from 'pino-pretty'

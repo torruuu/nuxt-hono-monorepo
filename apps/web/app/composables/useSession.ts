@@ -1,5 +1,5 @@
-import { authClient } from '@/lib/auth/auth-client'
 import { useQuery } from '@tanstack/vue-query'
+import { authClient } from '@web/lib/auth/auth-client'
 
 export function useSession() {
   const query = useQuery({

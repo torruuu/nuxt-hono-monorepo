@@ -1,11 +1,11 @@
-import { httpError } from '@/core/errors/http-error-handler.js'
-import type { RouteHandler } from '@/core/factories/create-app.js'
+import { httpError } from '@api/core/errors/http-error-handler.js'
+import type { RouteHandler } from '@api/core/factories/create-app.js'
 import type {
   CreateProductRoute,
   GetAllProductsRoute,
   GetProductByIdRoute,
-} from '@/features/product/product.routes.js'
-import * as productService from '@/features/product/product.service.js'
+} from '@api/features/product/product.routes.js'
+import * as productService from '@api/features/product/product.service.js'
 
 export const getAllProducts: RouteHandler<GetAllProductsRoute> = async (c) => {
   const products = await productService.getAllProducts()

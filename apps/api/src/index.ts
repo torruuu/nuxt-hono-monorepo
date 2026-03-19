@@ -1,5 +1,5 @@
-import app from '@/app.js'
-import env from '@/env.js'
+import app from '@api/app.js'
+import env from '@api/env.js'
 import { serve } from '@hono/node-server'
 
 serve({

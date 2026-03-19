@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Toaster } from '@/components/ui/sonner'
+import { Toaster } from '@web/components/ui/sonner'
 import { ConfigProvider } from 'reka-ui'
 
 const { locale } = useI18n()

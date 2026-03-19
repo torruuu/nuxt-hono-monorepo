@@ -1,5 +1,5 @@
-import env from '@/env'
-import { prisma } from '@/integrations/database/config.js'
+import env from '@api/env'
+import { prisma } from '@api/integrations/database/config.js'
 import { betterAuth } from 'better-auth'
 import { prismaAdapter } from 'better-auth/adapters/prisma'
 import { openAPI } from 'better-auth/plugins'

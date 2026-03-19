@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { cn } from '@/lib/shadcn/utils'
+import { cn } from '@web/lib/shadcn/utils'
 import { Loader2Icon } from 'lucide-vue-next'
 import type { HTMLAttributes } from 'vue'
 

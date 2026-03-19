@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { cn } from '@/lib/shadcn/utils'
 import { reactiveOmit } from '@vueuse/core'
+import { cn } from '@web/lib/shadcn/utils'
 import { X } from 'lucide-vue-next'
 import type { DialogContentEmits, DialogContentProps } from 'reka-ui'
 import { DialogClose, DialogContent, DialogPortal, useForwardPropsEmits } from 'reka-ui'

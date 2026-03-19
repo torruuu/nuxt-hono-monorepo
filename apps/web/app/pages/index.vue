@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { Button } from '@/components/ui/button'
-import { authClient } from '@/lib/auth/auth-client'
-import { querySession } from '@/lib/auth/query-session'
+import { Button } from '@web/components/ui/button'
+import { authClient } from '@web/lib/auth/auth-client'
+import { querySession } from '@web/lib/auth/query-session'
 import { LogOutIcon } from 'lucide-vue-next'
 
 const session = await querySession()

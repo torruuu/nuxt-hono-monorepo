@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { CreateProduct } from '@/components/product'
-import { LangSwitch, ThemeSwitch } from '@/components/ui/switches'
+import { CreateProduct } from '@web/components/product'
+import { LangSwitch, ThemeSwitch } from '@web/components/ui/switches'
 
 const { session } = useSession()
 </script>

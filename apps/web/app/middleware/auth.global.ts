@@ -1,4 +1,4 @@
-import { querySession } from '@/lib/auth/query-session'
+import { querySession } from '@web/lib/auth/query-session'
 
 export default defineNuxtRouteMiddleware(async (to, _from) => {
   const nuxtApp = useNuxtApp()

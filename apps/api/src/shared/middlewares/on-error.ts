@@ -1,6 +1,6 @@
-import { INTERNAL_SERVER_ERROR, OK } from '@/constants/http-status-codes.js'
-import { APP_ERRORS, type AppErrorCode } from '@/core/errors/app-errors.js'
-import envConfig from '@/env.js'
+import { INTERNAL_SERVER_ERROR, OK } from '@api/constants/http-status-codes.js'
+import { APP_ERRORS, type AppErrorCode } from '@api/core/errors/app-errors.js'
+import envConfig from '@api/env.js'
 import type { ErrorHandler } from 'hono'
 import type { ContentfulStatusCode } from 'hono/utils/http-status'
 

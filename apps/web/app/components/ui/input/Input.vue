@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { InputProps } from '@/components/ui/input/types'
-import { cn } from '@/lib/shadcn/utils'
 import { useVModel } from '@vueuse/core'
+import type { InputProps } from '@web/components/ui/input/types'
+import { cn } from '@web/lib/shadcn/utils'
 
 const props = defineProps<InputProps>()
 

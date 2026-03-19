@@ -1,9 +1,9 @@
-import pinoLogger from '@/core/logging/pino-logger.js'
-import defaultHook from '@/core/openapi/default-hook.js'
-import env from '@/env'
-import { auth } from '@/integrations/auth/config.js'
-import notFound from '@/shared/middlewares/not-found.js'
-import onError from '@/shared/middlewares/on-error.js'
+import pinoLogger from '@api/core/logging/pino-logger.js'
+import defaultHook from '@api/core/openapi/default-hook.js'
+import env from '@api/env'
+import { auth } from '@api/integrations/auth/config.js'
+import notFound from '@api/shared/middlewares/not-found.js'
+import onError from '@api/shared/middlewares/on-error.js'
 import {
   OpenAPIHono,
   type RouteHandler as HonoRouteHandler,

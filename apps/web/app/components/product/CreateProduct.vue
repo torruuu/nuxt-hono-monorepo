@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { createProductMutation } from '@/client/@tanstack/vue-query.gen'
-import { Button } from '@/components/ui/button'
+import { useMutation } from '@tanstack/vue-query'
+import { createProductMutation } from '@web/client/@tanstack/vue-query.gen'
+import { Button } from '@web/components/ui/button'
 import {
   Dialog,
   DialogContent,
@@ -8,31 +9,30 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@/components/ui/dialog'
+} from '@web/components/ui/dialog'
 import {
   Field,
   FieldError,
   FieldGroup,
   FieldLabel,
   FieldSet,
-} from '@/components/ui/field'
-import { Input } from '@/components/ui/input'
+} from '@web/components/ui/field'
+import { Input } from '@web/components/ui/input'
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupText,
   InputGroupTextarea,
-} from '@/components/ui/input-group'
+} from '@web/components/ui/input-group'
 import {
   NumberField,
   NumberFieldContent,
   NumberFieldDecrement,
   NumberFieldIncrement,
   NumberFieldInput,
-} from '@/components/ui/number-field'
-import { Spinner } from '@/components/ui/spinner'
-import { FormValidator } from '@/validators/FormValidator'
-import { useMutation } from '@tanstack/vue-query'
+} from '@web/components/ui/number-field'
+import { Spinner } from '@web/components/ui/spinner'
+import { FormValidator } from '@web/validators/FormValidator'
 import { PlusIcon } from 'lucide-vue-next'
 import { useForm, Field as VeeField } from 'vee-validate'
 import { toast } from 'vue-sonner'

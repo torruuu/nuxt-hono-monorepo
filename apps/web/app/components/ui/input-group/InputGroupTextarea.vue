@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Textarea } from '@/components/ui/textarea'
-import { cn } from '@/lib/shadcn/utils'
+import { Textarea } from '@web/components/ui/textarea'
+import { cn } from '@web/lib/shadcn/utils'
 import type { HTMLAttributes } from 'vue'
 
 const props = defineProps<{

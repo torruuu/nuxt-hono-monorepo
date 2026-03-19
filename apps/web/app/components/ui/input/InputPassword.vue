@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import type { InputProps } from '@/components/ui/input/types'
-import { cn } from '@/lib/shadcn/utils'
+import { Button } from '@web/components/ui/button'
+import { Input } from '@web/components/ui/input'
+import type { InputProps } from '@web/components/ui/input/types'
+import { cn } from '@web/lib/shadcn/utils'
 import { EyeIcon, EyeOffIcon } from 'lucide-vue-next'
 import { ref } from 'vue'
 

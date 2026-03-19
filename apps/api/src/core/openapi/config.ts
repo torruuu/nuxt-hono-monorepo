@@ -1,4 +1,4 @@
-import packageJSON from '@/../package.json' with { type: 'json' }
+import packageJSON from '@api/../package.json' with { type: 'json' }
 import type { OpenAPIHono } from '@hono/zod-openapi'
 import { Scalar } from '@scalar/hono-api-reference'
 import type { Env } from 'hono'

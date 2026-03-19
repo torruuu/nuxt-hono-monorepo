@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { cn } from '@/lib/shadcn/utils'
 import { reactiveOmit } from '@vueuse/core'
+import { cn } from '@web/lib/shadcn/utils'
 import { Plus } from 'lucide-vue-next'
 import type { NumberFieldIncrementProps } from 'reka-ui'
 import { NumberFieldIncrement, useForwardProps } from 'reka-ui'

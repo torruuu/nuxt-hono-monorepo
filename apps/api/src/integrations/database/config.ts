@@ -1,5 +1,5 @@
-import { PrismaClient } from '@/core/db/generated/prisma/client.js'
-import env from '@/env.js'
+import { PrismaClient } from '@api/core/db/generated/prisma/client.js'
+import env from '@api/env.js'
 import { PrismaPg } from '@prisma/adapter-pg'
 
 const adapter = new PrismaPg({

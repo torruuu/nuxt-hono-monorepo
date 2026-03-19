@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { SignIn, SignUp } from '@/components/auth'
+import { SignIn, SignUp } from '@web/components/auth'
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { querySession } from '@/lib/auth/query-session'
+} from '@web/components/ui/card'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@web/components/ui/tabs'
+import { querySession } from '@web/lib/auth/query-session'
 
 const session = await querySession()
 if (session) navigateTo('/')

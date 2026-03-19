@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { Button } from '@/components/ui/button'
+import { Button } from '@web/components/ui/button'
 import {
   Field,
   FieldError,
   FieldGroup,
   FieldLabel,
   FieldSet,
-} from '@/components/ui/field'
-import { Input, InputPassword } from '@/components/ui/input'
-import { Spinner } from '@/components/ui/spinner'
-import { authClient } from '@/lib/auth/auth-client'
-import { FormValidator } from '@/validators/FormValidator'
+} from '@web/components/ui/field'
+import { Input, InputPassword } from '@web/components/ui/input'
+import { Spinner } from '@web/components/ui/spinner'
+import { authClient } from '@web/lib/auth/auth-client'
+import { FormValidator } from '@web/validators/FormValidator'
 import { useForm, Field as VeeField } from 'vee-validate'
 import { toast } from 'vue-sonner'
 import { z } from 'zod'

@@ -1,7 +1,7 @@
-import { APP_ERRORS, type AppErrorCode } from '@/core/errors/app-errors.js'
+import { APP_ERRORS, type AppErrorCode } from '@api/core/errors/app-errors.js'
 import zodIssuesFormatter, {
   type FormattedZodIssue,
-} from '@/core/errors/zod-issues-formatter.js'
+} from '@api/core/errors/zod-issues-formatter.js'
 import { z } from '@hono/zod-openapi'
 
 const ZodIssueSchema = z.object({

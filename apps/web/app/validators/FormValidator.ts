@@ -1,4 +1,4 @@
-import type { I18nLocale, MessageSchema } from '@/../../i18n/schema'
+import type { I18nLocale, MessageSchema } from '@web/../../i18n/schema'
 import type { ComposerTranslation, LocaleMessages } from 'vue-i18n'
 import z from 'zod'
 
