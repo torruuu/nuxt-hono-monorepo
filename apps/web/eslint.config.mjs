@@ -71,6 +71,11 @@ export default withNuxt(
 
       '@typescript-eslint/no-unused-vars': RULES.OFF,
     },
+    languageOptions: {
+      parserOptions: {
+        tsconfigRootDir: import.meta.dirname,
+      },
+    },
   },
   {
     ignores: [

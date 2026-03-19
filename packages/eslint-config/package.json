@@ -1,0 +1,16 @@
+{
+  "name": "@starter-app/eslint-config",
+  "type": "module",
+  "version": "1.0.0",
+  "exports": {
+    ".": "./eslint.config.mjs",
+    "./create-config": "./create-config.js"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.3",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "typescript-eslint": "^8.57.1"
+  }
+}
